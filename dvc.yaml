@@ -1,0 +1,9 @@
+stages:
+  Simulator:
+    cmd: "python -c \"from code import Simulator; Simulator.load(name='Simulator').run_and_save()\"\
+      \ "
+    params:
+    - Simulator
+    metrics:
+    - nodes/Simulator/metrics_no_cache.json:
+        cache: false

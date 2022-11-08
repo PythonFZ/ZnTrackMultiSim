@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  Simulator:
+    cmd: "python -c \"from code import Simulator; Simulator.load(name='Simulator').run_and_save()\"\
+      \ "
+    params:
+      params.yaml:
+        Simulator:
+          parameter1: 1
+          parameter2: 1
+    outs:
+    - path: nodes/Simulator/metrics_no_cache.json
+      md5: 3b5c149801d059477c8193220f0a3fbb
+      size: 21
